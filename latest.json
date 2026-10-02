@@ -6,6 +6,6 @@
   "mandatory": false,
   "package": "releases/15.20.11/AvaliacaoFiscal_Update_15.20.11.afupd",
   "sha256": "f73ca7f4fb48119669abb5252f52110088db3facd075bf07b2dee313470b3ce7",
-  "released_at": "2026-10-02T16:35:00-04:00",
+  "released_at": "2026-10-02T16:06:00-04:00",
   "notes": "Teste básico do novo atualizador visual. A tela de login exibirá 'Atualização web V15.20.11 aplicada'."
 }
