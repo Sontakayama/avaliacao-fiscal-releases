@@ -1,0 +1,7 @@
+AVALIAÇÃO FISCAL V15.20.9 — TESTE DE ATUALIZAÇÃO WEB
+
+- Tela de login passa a mostrar o tempo restante da licença.
+- Exibe "N dias restantes", "1 dia restante" ou "Vence hoje".
+- Exibe também a data de validade em DD/MM/AAAA.
+- Atualização mínima: V15.20.8.
+- Não altera banco, licença, Installation ID, usuários ou dados fiscais.
