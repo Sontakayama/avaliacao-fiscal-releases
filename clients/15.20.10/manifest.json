@@ -1,0 +1,33 @@
+﻿{
+    "product":  "AVALIACAO_FISCAL_CLIENT",
+    "version":  "15.20.10",
+    "file":  "AvaliacaoFiscal.exe",
+    "sha256":  "70b9edce2a9975eeaaaf7f602c4ae174fa3bd8367cafdec5e65cd6ca5f0540d5",
+    "size":  13238528,
+    "encoding":  "base64",
+    "chunks":  [
+                   "client.b64.part000",
+                   "client.b64.part001",
+                   "client.b64.part002",
+                   "client.b64.part003",
+                   "client.b64.part004",
+                   "client.b64.part005",
+                   "client.b64.part006",
+                   "client.b64.part007",
+                   "client.b64.part008",
+                   "client.b64.part009",
+                   "client.b64.part010",
+                   "client.b64.part011",
+                   "client.b64.part012",
+                   "client.b64.part013",
+                   "client.b64.part014",
+                   "client.b64.part015",
+                   "client.b64.part016",
+                   "client.b64.part017",
+                   "client.b64.part018",
+                   "client.b64.part019",
+                   "client.b64.part020",
+                   "client.b64.part021",
+                   "client.b64.part022"
+               ]
+}
