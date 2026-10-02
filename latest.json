@@ -4,8 +4,8 @@
   "version": "15.20.6",
   "minimum_version": "15.20.5",
   "mandatory": false,
-  "package": "releases/15.20.6/AvaliacaoFiscal_Update_15.20.6.afupd",
-  "sha256": "449e595ad348a69043f311290f685910b8f2a4ef8f8f87fb9669fffe297fc2b5",
-  "released_at": "2026-10-02T13:46:42-04:00",
-  "notes": "Corrige sessão de usuários Fiscal/Consulta após troca de usuário."
+  "package": "",
+  "sha256": "",
+  "released_at": "2026-10-02T14:04:04-04:00",
+  "notes": "Hotfix de sessão V15.20.6 validado; aplicação manual do pacote assinado nesta primeira correção, pois a V15.20.5 pode perder a sessão do painel de atualização."
 }
