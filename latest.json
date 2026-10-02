@@ -5,7 +5,7 @@
   "minimum_version": "15.20.9",
   "mandatory": false,
   "package": "releases/15.20.10/AvaliacaoFiscal_Update_15.20.10.afupd",
-  "sha256": "38593a33194a942b482339fdef97a5b6f5c2ae833bcba9ad3cfb4640e46602f1",
-  "released_at": "2026-10-02T16:02:00-04:00",
-  "notes": "Instala a fundação do atualizador visual: progresso real, encerramento automático de sessões e atualização autenticada do launcher desktop."
+  "sha256": "d3319d8b629fdba365a4eda7d8b62a16bc1ea7ca0e92ef08dfe0e3e7a28ae852",
+  "released_at": "2026-10-02T16:10:00-04:00",
+  "notes": "Instala a fundação do atualizador visual: progresso real, encerramento automático de sessões, heartbeat de 5 s, rollback acompanhado e atualização autenticada do launcher desktop compartilhado."
 }
