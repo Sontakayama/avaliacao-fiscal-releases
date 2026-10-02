@@ -1,11 +1,11 @@
 {
   "product": "AVALIACAO_FISCAL",
   "channel": "stable",
-  "version": "15.20.6",
-  "minimum_version": "15.20.5",
+  "version": "15.20.7",
+  "minimum_version": "15.20.7",
   "mandatory": false,
   "package": "",
   "sha256": "",
-  "released_at": "2026-10-02T14:04:04-04:00",
-  "notes": "Hotfix de sessão V15.20.6 validado; aplicação manual do pacote assinado nesta primeira correção, pois a V15.20.5 pode perder a sessão do painel de atualização."
+  "released_at": "2026-10-02T14:32:00-04:00",
+  "notes": "V15.20.7 corrige deadlock do PostgreSQL no carregamento simultâneo das APIs e elimina falso logout de sessão. Esta é a nova base estável para próximas atualizações pelo aplicativo."
 }
