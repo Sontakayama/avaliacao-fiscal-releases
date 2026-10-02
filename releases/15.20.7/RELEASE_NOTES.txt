@@ -1,0 +1,8 @@
+AVALIAÇÃO FISCAL V15.20.7 — DEADLOCK / SESSÃO
+
+- Migrações de banco executam uma única vez na inicialização do servidor.
+- get_db() deixa de repetir CREATE/ALTER/UPDATE em todas as APIs.
+- Corrige deadlock PostgreSQL ao abrir Configurações.
+- Falha temporária de banco não é mais convertida em 401 Sessão expirada.
+- Reduz contenção de last_seen_at nas sessões.
+- Preserva PostgreSQL, licença, Installation ID, usuários e dados fiscais.
