@@ -1,0 +1,8 @@
+AVALIAÇÃO FISCAL V15.20.6 — CORREÇÃO DE SESSÃO POR PERFIL
+
+- Corrige perda de sessão ao entrar com usuários FISCAL e CONSULTA.
+- Inicializa a chave de sessão antes do Waitress atender requisições.
+- O login confirma /api/auth/me antes de abrir o workspace.
+- Novo login abre em Início e não herda a última tela do usuário anterior.
+- Heartbeat envia credenciais explicitamente.
+- Banco, licença, Installation ID e dados fiscais não são alterados.

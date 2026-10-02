@@ -1,11 +1,11 @@
 {
   "product": "AVALIACAO_FISCAL",
   "channel": "stable",
-  "version": "15.20.5",
+  "version": "15.20.6",
   "minimum_version": "15.20.5",
   "mandatory": false,
-  "package": "",
-  "sha256": "",
-  "released_at": "2026-10-02T00:00:00-04:00",
-  "notes": "V15.20.5 estabelece a base de atualização em nuvem. Não há atualização remota pendente para esta mesma versão."
+  "package": "releases/15.20.6/AvaliacaoFiscal_Update_15.20.6.afupd",
+  "sha256": "449e595ad348a69043f311290f685910b8f2a4ef8f8f87fb9669fffe297fc2b5",
+  "released_at": "2026-10-02T13:46:42-04:00",
+  "notes": "Corrige sessão de usuários Fiscal/Consulta após troca de usuário."
 }
