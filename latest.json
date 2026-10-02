@@ -1,11 +1,11 @@
 {
   "product": "AVALIACAO_FISCAL",
   "channel": "stable",
-  "version": "15.20.9",
-  "minimum_version": "15.20.8",
+  "version": "15.20.10",
+  "minimum_version": "15.20.9",
   "mandatory": false,
-  "package": "releases/15.20.9/AvaliacaoFiscal_Update_15.20.9.afupd",
-  "sha256": "a6ce77cfb50932713b3c492843a8a182e072f8f68310b3f81d841797d536cb26",
-  "released_at": "2026-10-02T14:59:00-04:00",
-  "notes": "Tela de login agora mostra o tempo restante e a data de validade da licença."
+  "package": "releases/15.20.10/AvaliacaoFiscal_Update_15.20.10.afupd",
+  "sha256": "38593a33194a942b482339fdef97a5b6f5c2ae833bcba9ad3cfb4640e46602f1",
+  "released_at": "2026-10-02T16:02:00-04:00",
+  "notes": "Instala a fundação do atualizador visual: progresso real, encerramento automático de sessões e atualização autenticada do launcher desktop."
 }

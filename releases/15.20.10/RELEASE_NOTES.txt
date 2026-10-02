@@ -1,0 +1,16 @@
+AVALIAÇÃO FISCAL V15.20.10 — VISUAL UPDATE FOUNDATION
+
+- Instala a base do atualizador visual.
+- O Admin poderá iniciar atualização mesmo com outras sessões conectadas.
+- Outras sessões serão encerradas automaticamente com motivo UPDATE.
+- Heartbeat reduzido para 5 segundos.
+- A estação que iniciar uma atualização futura verá progresso real.
+- As demais estações terão o cliente encerrado durante a atualização.
+- Etapas monitoradas: validação, backup, parada do serviço, aplicação, reinício e health-check.
+- Em caso de falha, rollback automático continua ativo.
+- O launcher desktop compartilhado é atualizado com SHA-256 fixado no código assinado.
+- Banco, licença, Installation ID, usuários e dados fiscais permanecem preservados.
+
+IMPORTANTE
+- A atualização 15.20.9 -> 15.20.10 ainda usa o fluxo atual.
+- O novo comportamento visual completo passa a valer para 15.20.11 e posteriores.
