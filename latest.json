@@ -1,0 +1,11 @@
+{
+  "product": "AVALIACAO_FISCAL",
+  "channel": "stable",
+  "version": "15.20.5",
+  "minimum_version": "15.20.5",
+  "mandatory": false,
+  "package": "",
+  "sha256": "",
+  "released_at": "2026-10-02T00:00:00-04:00",
+  "notes": "V15.20.5 estabelece a base de atualização em nuvem. Não há atualização remota pendente para esta mesma versão."
+}
