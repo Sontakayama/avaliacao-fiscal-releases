@@ -1,11 +1,11 @@
 {
   "product": "AVALIACAO_FISCAL",
   "channel": "stable",
-  "version": "15.20.8",
+  "version": "15.20.9",
   "minimum_version": "15.20.8",
   "mandatory": false,
-  "package": "",
-  "sha256": "",
-  "released_at": "2026-10-02T14:41:00-04:00",
-  "notes": "V15.20.8 corrige a validação HTTPS do canal GitHub em ambientes Windows usando curl.exe/Schannel como fallback seguro e exibe a versão instalada dinamicamente."
+  "package": "releases/15.20.9/AvaliacaoFiscal_Update_15.20.9.afupd",
+  "sha256": "a6ce77cfb50932713b3c492843a8a182e072f8f68310b3f81d841797d536cb26",
+  "released_at": "2026-10-02T14:59:00-04:00",
+  "notes": "Tela de login agora mostra o tempo restante e a data de validade da licença."
 }
