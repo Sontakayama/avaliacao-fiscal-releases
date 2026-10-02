@@ -1,0 +1,7 @@
+AVALIAÇÃO FISCAL V15.20.11 — TESTE BÁSICO DO ATUALIZADOR VISUAL
+
+- Atualização propositalmente pequena.
+- Tela de login recebe o marcador "Atualização web V15.20.11 aplicada".
+- Atualiza a versão operacional para 15.20.11.
+- Não altera banco, PostgreSQL, licença, Installation ID, usuários ou dados fiscais.
+- Objetivo: validar fechamento das demais sessões, progresso visual, reinício, health-check e reabertura.

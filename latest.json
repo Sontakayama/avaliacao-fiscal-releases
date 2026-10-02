@@ -1,11 +1,11 @@
 {
   "product": "AVALIACAO_FISCAL",
   "channel": "stable",
-  "version": "15.20.10",
-  "minimum_version": "15.20.9",
+  "version": "15.20.11",
+  "minimum_version": "15.20.10",
   "mandatory": false,
-  "package": "releases/15.20.10/AvaliacaoFiscal_Update_15.20.10.afupd",
-  "sha256": "d3319d8b629fdba365a4eda7d8b62a16bc1ea7ca0e92ef08dfe0e3e7a28ae852",
-  "released_at": "2026-10-02T16:10:00-04:00",
-  "notes": "Instala a fundação do atualizador visual: progresso real, encerramento automático de sessões, heartbeat de 5 s, rollback acompanhado e atualização autenticada do launcher desktop compartilhado."
+  "package": "releases/15.20.11/AvaliacaoFiscal_Update_15.20.11.afupd",
+  "sha256": "f73ca7f4fb48119669abb5252f52110088db3facd075bf07b2dee313470b3ce7",
+  "released_at": "2026-10-02T16:35:00-04:00",
+  "notes": "Teste básico do novo atualizador visual. A tela de login exibirá 'Atualização web V15.20.11 aplicada'."
 }
