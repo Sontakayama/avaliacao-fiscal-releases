@@ -1,11 +1,11 @@
 {
   "product": "AVALIACAO_FISCAL",
   "channel": "stable",
-  "version": "15.20.7",
-  "minimum_version": "15.20.7",
+  "version": "15.20.8",
+  "minimum_version": "15.20.8",
   "mandatory": false,
   "package": "",
   "sha256": "",
-  "released_at": "2026-10-02T14:32:00-04:00",
-  "notes": "V15.20.7 corrige deadlock do PostgreSQL no carregamento simultâneo das APIs e elimina falso logout de sessão. Esta é a nova base estável para próximas atualizações pelo aplicativo."
+  "released_at": "2026-10-02T14:41:00-04:00",
+  "notes": "V15.20.8 corrige a validação HTTPS do canal GitHub em ambientes Windows usando curl.exe/Schannel como fallback seguro e exibe a versão instalada dinamicamente."
 }
