@@ -1,0 +1,26 @@
+{
+    "version":  "15.20.18",
+    "sha256":  "a14a88019aef9e63c0437ae71e064d82ebe69daee4225137f53f06be5a4cb164",
+    "size":  8986394,
+    "format":  "base64-chunks-v1",
+    "chunks":  [
+                   "client.b64.part000",
+                   "client.b64.part001",
+                   "client.b64.part002",
+                   "client.b64.part003",
+                   "client.b64.part004",
+                   "client.b64.part005",
+                   "client.b64.part006",
+                   "client.b64.part007",
+                   "client.b64.part008",
+                   "client.b64.part009",
+                   "client.b64.part010",
+                   "client.b64.part011",
+                   "client.b64.part012",
+                   "client.b64.part013",
+                   "client.b64.part014",
+                   "client.b64.part015",
+                   "client.b64.part016",
+                   "client.b64.part017"
+               ]
+}
