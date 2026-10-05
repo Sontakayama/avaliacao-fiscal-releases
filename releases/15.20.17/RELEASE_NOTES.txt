@@ -1,0 +1,68 @@
+AVALIAÇÃO FISCAL V15.20.17 — CONFIABILIDADE E CONTROLE OPERACIONAL
+
+Objetivo
+- Tornar a própria aplicação capaz de informar se está saudável, consistente e recuperável.
+- Automatizar backup e pós-validação de atualização.
+- Registrar falhas, reinícios e eventos de confiabilidade.
+- Manter um watchdog externo para recuperar o serviço em caso de travamento real.
+
+Saúde do Sistema
+- Nova tela administrativa "Saúde do Sistema".
+- Status do servidor e heartbeat.
+- Porta local da aplicação e latência.
+- Banco de dados com SELECT 1 real e latência.
+- Teste real da rota de login.
+- Espaço livre, utilizado e total no volume da instalação.
+- Verificação de arquivos críticos.
+- Versões independentes Server / Web / Launcher.
+- Alerta automático quando as três versões estiverem divergentes.
+- Indicadores: Último backup, Última atualização, Último erro crítico e Tempo online.
+
+Central de Logs
+- Logs da aplicação.
+- Logs do atualizador.
+- Log do launcher.
+- Eventos de confiabilidade.
+- Filtros por origem e leitura diretamente na aplicação, sem abrir pastas do Windows.
+
+Watchdog e recuperação
+- Heartbeat interno do servidor a cada 15 segundos.
+- Watchdog externo em processo separado.
+- Health-check local recorrente.
+- Reinício do serviço após falhas consecutivas, com cooldown para evitar loop.
+- Watchdog ignora interrupções enquanto uma atualização está ativa.
+- Windows Service Recovery configurado com tentativas automáticas de restart.
+- Reinícios sem marcador planejado são registrados como evento de atenção.
+- Encerramentos controlados são registrados separadamente.
+
+Atualizações
+- Backup de rollback dos arquivos alterados permanece obrigatório.
+- Novo backup operacional pré-update executado com o servidor parado.
+- PostgreSQL: pg_dump em formato custom.
+- SQLite: snapshot consistente do banco.
+- Configuração e licença incluídas no ponto de recuperação.
+- Falha no backup aborta a atualização antes da troca dos arquivos.
+- Pós-validação automática após reinício:
+  * /api/health;
+  * banco de dados;
+  * tela de login;
+  * arquivos críticos;
+  * versão Web.
+- Se a pós-validação falhar, o rollback automático existente é acionado.
+- Sucessos, falhas e resultado do rollback passam a ser gravados na camada de confiabilidade.
+
+Versionamento
+- Server: 15.20.17
+- Web: 15.20.17 com version.json independente
+- Launcher Edge App: 15.20.17
+- Launcher publicado com SHA-256 fixado no servidor.
+
+Segurança
+- Mantidas as permissões ADMINISTRADOR / FISCAL / CONSULTA.
+- Saúde do Sistema e Central de Logs são restritas ao ADMINISTRADOR.
+- Mantidos lock de NF, auditoria nominal de cálculo e trilha auditável de pagamentos.
+
+Atualização
+- Canal: stable.
+- Versão mínima: 15.20.16.
+- Pacote AF-UPDATE-1 assinado RSA/SHA-256 com a chave Update V2.
