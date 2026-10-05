@@ -1,0 +1,40 @@
+AVALIAÇÃO FISCAL V15.20.14 — PERMISSÕES, BLOQUEIO DE NF E AUDITORIA
+
+BASE
+- Evolução direta da V15.20.13.
+- Distribuição preparada para o mecanismo de atualização em nuvem.
+- Banco, licença, Installation ID, usuários, senhas, documentos e dados fiscais permanecem preservados.
+
+PERFIS
+- ADMINISTRADOR: administração completa + operação fiscal.
+- FISCAL: operação fiscal, sem Configurações, Diagnóstico, Atualização, usuários, sessões ou troca de licença.
+- CONSULTA: acesso operacional em modo somente leitura.
+
+SEGURANÇA DE ENDPOINTS
+- Recursos administrativos retornam HTTP 403 com code=ADMIN_ONLY para FISCAL e CONSULTA.
+- Operações de escrita retornam HTTP 403 com code=READ_ONLY_PROFILE para CONSULTA.
+- Restrições são aplicadas no backend e refletidas na interface.
+- Configurações e Diagnóstico deixam de aparecer para perfis não administrativos.
+
+BLOQUEIO DE NOTA
+- ADMINISTRADOR e FISCAL adquirem lock ao abrir uma NF para cálculo.
+- Outro usuário pode visualizar a NF, mas não alterar enquanto o lock estiver ativo.
+- Conflito de edição retorna HTTP 423 com code=NF_LOCKED.
+- Heartbeat do lock a cada 30 segundos.
+- Lock expira após 120 segundos sem renovação.
+- Logout, encerramento administrativo e atualização do servidor liberam locks da sessão.
+- ADMINISTRADOR pode forçar a liberação de um lock, com registro de auditoria.
+
+AUDITORIA DO CÁLCULO
+- Alterações de ST/Tributado e parâmetros fiscais ficam vinculadas ao usuário autenticado.
+- Registro inclui NF, item, usuário, sessão, ação, campo, valor anterior, valor novo, IP/computador e data/hora.
+- A NF passa a exibir o último responsável pela edição do cálculo.
+
+BANCO
+- Nova tabela nf_edit_locks.
+- Nova tabela nf_calc_audit.
+- Migração é aditiva e preserva os dados existentes.
+
+VALIDAÇÃO
+- Workflow dedicado valida sintaxe Python e o contrato de autorização da V15.20.14.
+- Todas as rotas mutáveis são classificadas como administrativas, bloqueadas para CONSULTA ou explicitamente permitidas como geração/consulta.
