@@ -48,3 +48,13 @@ Atualização
 - Canal: stable.
 - Versão mínima: 15.20.17.
 - Pacote AF-UPDATE-1 assinado RSA/SHA-256 com a chave Update V2.
+
+
+HOTFIX DE PERSISTÊNCIA — 05/10/2026
+- Corrigido rollback indevido após aplicar a V15.20.18.
+- A pós-validação agora lê o health real do servidor, incluindo SELECT 1 do banco.
+- O progresso da atualização passa a ser anexado ao health sem substituir os dados reais.
+- Estado de pós-validação separado como "validating".
+- Pacotes baixados da mesma versão passam a ser vinculados ao SHA-256 publicado.
+- Se o pacote stable for substituído por um hotfix, o sistema exige novo download antes de aplicar.
+- Nenhuma regra fiscal, banco de dados ou contrato de auditoria foi alterado.
