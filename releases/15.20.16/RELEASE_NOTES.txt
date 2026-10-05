@@ -1,0 +1,37 @@
+AVALIAÇÃO FISCAL V15.20.16 — ESTABILIDADE DESKTOP E GOVERNANÇA DE PAGAMENTOS
+
+Objetivo
+- Eliminar os travamentos recorrentes da janela desktop baseada em PyWebView/WebView2.
+- Transformar Pagamentos & Eficiência em um módulo de gestão empresarial, com controles internos e trilha de auditoria nominal.
+
+Launcher desktop
+- AvaliacaoFiscal.exe deixa de hospedar a aplicação dentro do PyWebView.
+- O launcher passa a abrir o Microsoft Edge em App Mode, mantendo aparência de aplicativo sem barra de endereço.
+- Health-check /api/health antes da abertura.
+- No próprio servidor, prioriza 127.0.0.1.
+- Em estações, usa o endereço configurado e tenta IPs resolvidos quando o hostname falhar.
+- Detecta janela Avaliação Fiscal já aberta e tenta trazê-la para frente.
+- Registra log em ProgramData\AvaliacaoFiscal\Launcher\launcher.log.
+- Mensagem clara quando servidor ou Edge não estiverem disponíveis.
+- Launcher reduzido, sem dependência operacional do PyWebView.
+
+Pagamentos & Eficiência
+- Nova apresentação de Governança de Pagamentos Fiscais.
+- Visão Executiva com total pago, encargos, pontualidade e economia.
+- Novos controles: exposição em aberto, exposição vencida, evidências pendentes, obrigações sem responsável e índice de controle.
+- "Contas a Pagar" passa a ser apresentada como fila de Obrigações Fiscais.
+- Nova aba Auditoria com eventos operacionais por usuário, perfil, estação, IP e horário.
+- Alterações de vencimento/responsável, pagamentos, anexos de guia e comprovante passam a registrar evento de auditoria.
+- Relatório Excel passa a incluir Controles Internos e aba TRILHA AUDITORIA.
+- Layout mais empresarial, compacto e orientado a risco/evidência.
+
+Segurança
+- Mantidas permissões da V15.20.14/V15.20.15.
+- CONSULTA permanece somente leitura.
+- Locks exclusivos de NF e auditoria nominal do cálculo permanecem inalterados.
+- O pacote de atualização inclui agora cloud_updater.py, visual_update_patch.py e client_deployer.py para manter o mecanismo de atualização sincronizado.
+
+Atualização
+- Canal: stable.
+- Versão mínima: 15.20.15.
+- Pacote assinado RSA/SHA-256 com a chave Update V2.
