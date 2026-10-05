@@ -1,11 +1,11 @@
-﻿{
-    "product":  "AVALIACAO_FISCAL",
-    "channel":  "stable",
-    "version":  "15.20.14",
-    "minimum_version":  "15.20.13",
-    "mandatory":  false,
-    "package":  "releases/15.20.14/AvaliacaoFiscal_Update_15.20.14.afupd",
-    "sha256":  "929c309e03ef7899d1e447bc0730e2b0006e91179d91e7ec9cbf5f4ded3d7917",
-    "released_at":  "2026-10-05T14:18:05Z",
-    "notes":  "PermissÃµes por perfil, CONSULTA somente leitura, bloqueio exclusivo de NF e auditoria nominal do cÃ¡lculo."
+{
+  "product": "AVALIACAO_FISCAL",
+  "channel": "stable",
+  "version": "15.20.14",
+  "minimum_version": "15.20.13",
+  "mandatory": false,
+  "package": "releases/15.20.14/AvaliacaoFiscal_Update_15.20.14.afupd",
+  "sha256": "929c309e03ef7899d1e447bc0730e2b0006e91179d91e7ec9cbf5f4ded3d7917",
+  "released_at": "2026-10-05T14:18:05Z",
+  "notes": "Permissões por perfil, CONSULTA somente leitura, bloqueio exclusivo de NF e auditoria nominal do cálculo."
 }
