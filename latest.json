@@ -1,11 +1,11 @@
 {
-    "product":  "AVALIACAO_FISCAL",
-    "channel":  "stable",
-    "version":  "15.20.18",
-    "minimum_version":  "15.20.17",
-    "mandatory":  false,
-    "package":  "releases/15.20.18/AvaliacaoFiscal_Update_15.20.18.afupd",
-    "sha256":  "a121711dbff44d5da711dd3f369fc0ff4dd52fad0f721bc58d4c6ba8fc133c91",
-    "released_at":  "2026-10-05T18:22:27Z",
-    "notes":  "SaÃºde do Sistema com paleta empresarial, arquivos crÃ­ticos dark e logs semÃ¢nticos por origem e severidade."
+  "product": "AVALIACAO_FISCAL",
+  "channel": "stable",
+  "version": "15.20.18",
+  "minimum_version": "15.20.17",
+  "mandatory": false,
+  "package": "releases/15.20.18/AvaliacaoFiscal_Update_15.20.18.afupd",
+  "sha256": "a121711dbff44d5da711dd3f369fc0ff4dd52fad0f721bc58d4c6ba8fc133c91",
+  "released_at": "2026-10-05T18:22:27Z",
+  "notes": "Saúde do Sistema com paleta empresarial, arquivos críticos dark e logs semânticos por origem e severidade."
 }
