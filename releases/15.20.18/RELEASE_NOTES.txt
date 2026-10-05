@@ -1,0 +1,50 @@
+AVALIAÇÃO FISCAL V15.20.18 — REFINAMENTO VISUAL E OBSERVABILIDADE
+
+Objetivo
+- Refinar a tela Saúde do Sistema para um padrão empresarial de observabilidade.
+- Corrigir contrastes excessivos, especialmente nas linhas de Arquivos críticos.
+- Reservar cada cor para um significado operacional claro.
+
+Paleta semântica
+- Fundo principal: azul-preto.
+- Superfícies: tons escuros neutros.
+- Turquesa: navegação e ação.
+- Verde: somente saudável / OK / íntegro.
+- Amarelo: somente atenção / pendência / divergência.
+- Vermelho: somente falha / erro crítico.
+
+Saúde do Sistema
+- Arquivos críticos deixam de usar fundos claros e passam para linhas dark.
+- Status ÍNTEGRO/FALHA em badges semânticos.
+- Cards de Servidor, Banco, Login, Disco, Watchdog e Versões recebem hierarquia visual mais limpa.
+- Estado operacional recebe pontos de status por linha.
+- Badge geral passa a indicar visualmente Sistema saudável ou Requer atenção sem pintar toda a tela.
+
+Central de Logs
+- Cores distintas por origem:
+  * Atualização: azul.
+  * Launcher: turquesa.
+  * Confiabilidade: verde.
+  * Watchdog: amarelo neutro.
+  * Aplicação: azul-violeta neutro.
+- Severidade detectada visualmente:
+  * sucesso: marcador verde;
+  * aviso: marcador amarelo;
+  * erro/falha: marcador vermelho.
+- Fundo dos logs permanece escuro e de alto contraste.
+
+Versionamento
+- Server: 15.20.18
+- Web: 15.20.18
+- Launcher Edge App: 15.20.18
+- Sem alteração de regras fiscais, banco de dados ou contratos de auditoria.
+
+Segurança e confiabilidade
+- Mantidos Saúde do Sistema, watchdog, backup pré-update, pós-validação e rollback da V15.20.17.
+- Mantidas permissões ADMINISTRADOR / FISCAL / CONSULTA.
+- Mantidos lock de NF e trilhas de auditoria.
+
+Atualização
+- Canal: stable.
+- Versão mínima: 15.20.17.
+- Pacote AF-UPDATE-1 assinado RSA/SHA-256 com a chave Update V2.

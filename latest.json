@@ -1,11 +1,11 @@
 {
-  "product": "AVALIACAO_FISCAL",
-  "channel": "stable",
-  "version": "15.20.17",
-  "minimum_version": "15.20.16",
-  "mandatory": false,
-  "package": "releases/15.20.17/AvaliacaoFiscal_Update_15.20.17.afupd",
-  "sha256": "efa1685ea6cc63fed948605caae36792cba4a1d20f5998bb2c00631bb59a7db2",
-  "released_at": "2026-10-05T17:33:51Z",
-  "notes": "Saúde do Sistema, backup operacional, pós-validação, rollback automático, central de logs e watchdog."
+    "product":  "AVALIACAO_FISCAL",
+    "channel":  "stable",
+    "version":  "15.20.18",
+    "minimum_version":  "15.20.17",
+    "mandatory":  false,
+    "package":  "releases/15.20.18/AvaliacaoFiscal_Update_15.20.18.afupd",
+    "sha256":  "a121711dbff44d5da711dd3f369fc0ff4dd52fad0f721bc58d4c6ba8fc133c91",
+    "released_at":  "2026-10-05T18:22:27Z",
+    "notes":  "SaÃºde do Sistema com paleta empresarial, arquivos crÃ­ticos dark e logs semÃ¢nticos por origem e severidade."
 }
