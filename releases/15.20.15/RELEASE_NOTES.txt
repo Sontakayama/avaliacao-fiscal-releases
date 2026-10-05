@@ -1,0 +1,28 @@
+AVALIAÇÃO FISCAL V15.20.15 — IDENTIDADE VISUAL E PARÂMETROS FISCAIS
+
+Objetivo
+- Corrigir a versão exibida no login e na identidade visual após atualização em nuvem.
+- Separar administração do servidor dos parâmetros de cálculo.
+- Melhorar a utilização da tela em zoom 100%, eliminando estouro horizontal na área de Configurações.
+
+Alterações
+- A versão do login deixa de ser texto fixo e passa a usar AF_VERSION do servidor.
+- Login, rodapé, título da aplicação, assets e identificação lateral passam a refletir V15.20.15.
+- Nova tela "Parâmetros fiscais" no menu administrativo.
+- Parâmetros do Maranhão, MVA, alíquota interna, vigências, Base Fiscal MA e configuração de monitores foram removidos da tela Configurações e agrupados na nova tela.
+- Configurações passa a concentrar servidor, licença, usuários, sessões e atualização.
+- Grade de usuários reorganizada para evitar campos espremidos.
+- Linhas de sessões ativas compactadas para impedir overflow horizontal.
+- Painel administrativo deixa de esticar verticalmente a coluna de usuários.
+- Tela de parâmetros recebe largura controlada e grid responsivo em 4/2/1 colunas.
+
+Segurança e permissões
+- Mantido integralmente o contrato da V15.20.14.
+- Configurações, Diagnóstico, Parâmetros fiscais e Base Fiscal MA continuam restritos ao ADMINISTRADOR.
+- CONSULTA permanece somente leitura.
+- Locks de NF e auditoria nominal do cálculo permanecem inalterados.
+
+Atualização
+- Canal: stable.
+- Versão mínima: 15.20.14.
+- Pacote assinado RSA/SHA-256 com a chave Update V2.
