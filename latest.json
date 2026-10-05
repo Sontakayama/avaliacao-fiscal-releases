@@ -1,11 +1,11 @@
 {
-    "product":  "AVALIACAO_FISCAL",
-    "channel":  "stable",
-    "version":  "15.20.16",
-    "minimum_version":  "15.20.15",
-    "mandatory":  false,
-    "package":  "releases/15.20.16/AvaliacaoFiscal_Update_15.20.16.afupd",
-    "sha256":  "f67f9f5aa1d1d311d66eac486caeecc55780bf4f335065bcd9a53af5d834ed35",
-    "released_at":  "2026-10-05T15:46:02Z",
-    "notes":  "Launcher Edge App estÃ¡vel e Pagamentos \u0026 EficiÃªncia com governanÃ§a, controles internos e trilha de auditoria."
+  "product": "AVALIACAO_FISCAL",
+  "channel": "stable",
+  "version": "15.20.16",
+  "minimum_version": "15.20.15",
+  "mandatory": false,
+  "package": "releases/15.20.16/AvaliacaoFiscal_Update_15.20.16.afupd",
+  "sha256": "f67f9f5aa1d1d311d66eac486caeecc55780bf4f335065bcd9a53af5d834ed35",
+  "released_at": "2026-10-05T15:46:02Z",
+  "notes": "Launcher Edge App estável e Pagamentos & Eficiência com governança, controles internos e trilha de auditoria."
 }
