@@ -1,0 +1,32 @@
+AVALIAÇÃO FISCAL — V15.20.20
+STATUS: EM HOMOLOGAÇÃO
+
+OBJETIVO
+Tornar a leitura e validação de comprovantes bancários independente do banco e compatível com comprovantes em PDF textual, PDF escaneado, foto e captura de tela convertida para PDF.
+
+IMPLEMENTADO
+- Parser bancário genérico por semântica dos campos, sem depender do layout de um banco específico.
+- Reconhecimento de variações de Código de barras, Linha digitável, Valor pago, Valor total, Valor do documento, Data do pagamento, NSU, Autenticação, Protocolo, NF e Observação.
+- Suporte a códigos de 44, 47 e 48 posições, com normalização antes da comparação.
+- Validação principal por código de barras + valor da Guia/Boleto.
+- Fallback seguro por NF + valor + data/NSU/autenticação quando o comprovante não imprime o código.
+- Divergências do texto nativo continuam bloqueando o comprovante.
+- Divergências encontradas somente por OCR vão para REVISAR, nunca são recusadas automaticamente.
+- OCR local com RapidOCR + ONNX Runtime + PyMuPDF.
+- OCR executado somente como fallback quando o PDF não fornece evidências suficientes.
+- Nenhum comprovante, imagem ou dado fiscal é enviado para serviço externo; somente o bundle de dependências OCR é obtido do repositório público de releases.
+- Runtime OCR distribuído em bundle público versionado; o SHA-256 e o tamanho ficam fixados dentro da atualização assinada.
+- As dependências são baixadas apenas uma vez, reconstruídas localmente, validadas por SHA-256 e instaladas offline no Python privado do servidor.
+- Reprocessamento automático dos comprovantes/guias antigos que ficaram em REVISAR por limitações das versões anteriores.
+- Imagens anexadas continuam convertidas para PDF e passam pelo mesmo fluxo documental.
+
+SEGURANÇA
+- OCR não substitui evidência textual confiável.
+- Conflito explícito em código de barras, valor ou NF no texto real continua sendo DIVERGENTE.
+- Resultado incerto do OCR permanece REVISAR para conferência humana.
+- Regras fiscais, CFOP, MVA e cálculos tributários não foram alterados.
+
+COMPATIBILIDADE
+- Base: V15.20.19.
+- Banco de dados e documentos existentes preservados.
+- Atualizador, rollback, watchdog, licença e governança multiusuário preservados.
