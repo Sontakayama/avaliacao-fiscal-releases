@@ -1,0 +1,15 @@
+{
+    "version":  "15.20.19",
+    "sha256":  "9190e48764c017bd25295ea976120c59f810ba67ba581d1e84f8f2062d67756d",
+    "size":  2770680,
+    "format":  "base64-chunks-v1",
+    "file":  "AvaliacaoFiscal_Update_15.20.19.afupd",
+    "chunks":  [
+                   "package.b64.part000",
+                   "package.b64.part001",
+                   "package.b64.part002",
+                   "package.b64.part003",
+                   "package.b64.part004",
+                   "package.b64.part005"
+               ]
+}
