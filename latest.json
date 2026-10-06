@@ -1,11 +1,11 @@
 {
-  "product": "AVALIACAO_FISCAL",
-  "channel": "stable",
-  "version": "15.20.18",
-  "minimum_version": "15.20.17",
-  "mandatory": false,
-  "package": "releases/15.20.18/AvaliacaoFiscal_Update_15.20.18.afupd",
-  "sha256": "d565f945176755c7835f5c8d8c7e3db3ee31c74dd0e70992cb7bf705f595b00c",
-  "released_at": "2026-10-05T19:00:36Z",
-  "notes": "V15.20.18 R2: corrige rollback indevido apos reinicio e preserva a observabilidade empresarial."
+    "product":  "AVALIACAO_FISCAL",
+    "channel":  "stable",
+    "version":  "15.20.19",
+    "minimum_version":  "15.20.18",
+    "mandatory":  false,
+    "package":  "releases/15.20.19/AvaliacaoFiscal_Update_15.20.19.afupd",
+    "sha256":  "9190e48764c017bd25295ea976120c59f810ba67ba581d1e84f8f2062d67756d",
+    "released_at":  "2026-10-06T13:29:54Z",
+    "notes":  "V15.20.19: governanca multiusuario, Documentos reorganizados e modais corrigidos."
 }
