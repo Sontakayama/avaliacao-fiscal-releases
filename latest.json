@@ -5,7 +5,7 @@
   "minimum_version": "15.20.20",
   "mandatory": false,
   "package": "releases/15.20.21/AvaliacaoFiscal_Update_15.20.21.afupd",
-  "sha256": "aa89f4542d551426a2d7c427b2a9a92750474fe3f2806cf8c2ea4cb7e9a47271",
-  "released_at": "2026-10-06T17:36:25Z",
+  "sha256": "64aae739131b0214226bcd9dde6d4c0be2f50ea5f508d08731e54b2645c15d4f",
+  "released_at": "2026-10-06T17:42:56Z",
   "notes": "Backup completo AF-BACKUP-1: PostgreSQL, XMLs, documentos, TVIs, SHA-256, validação integral e retenção automática."
 }
