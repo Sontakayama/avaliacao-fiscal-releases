@@ -1,0 +1,45 @@
+AVALIAÇÃO FISCAL — V15.20.21
+STATUS: HOMOLOGAÇÃO DE BACKUP COMPLETO
+
+OBJETIVO
+Criar uma camada real de proteção dos dados do Avaliação Fiscal antes de habilitar a restauração em instalações novas.
+
+IMPLEMENTADO
+- Novo formato portátil AF-BACKUP-1 (.afbackup).
+- Backup lógico do PostgreSQL via pg_dump em formato custom, sem owner/ACL.
+- Validação do dump PostgreSQL com pg_restore --list.
+- Compatibilidade de teste/legado com SQLite usando API nativa de backup + PRAGMA quick_check.
+- Cópia integral da pasta de dados da aplicação, incluindo XMLs, processados, erros, relatórios, dados auxiliares, documentos de NF, DANFEs, guias/boletos, comprovantes, TVIs e base histórica.
+- server_config.reference.json preservado como referência da instalação original.
+- restore_hints.json sem reutilização de credenciais DPAPI em outro Windows.
+- Manifesto com SHA-256 e tamanho de cada arquivo.
+- Validação completa do .afbackup: CRC ZIP, presença do banco, tamanho e SHA-256 de todos os arquivos.
+- SHA-256 do arquivo .afbackup completo registrado no histórico.
+- Tela Configurações > Backup e proteção de dados.
+- Backup manual com acompanhamento de progresso.
+- Validação manual de um backup já criado.
+- Download do .afbackup pela área administrativa.
+- Agendamento Windows AvaliacaoFiscalBackupDaily às 23:00.
+- Retenção automática dos backups agendados: 7 diários + 4 semanais + 6 mensais.
+- Backups manuais não são excluídos automaticamente.
+- Trava contra duas operações de backup simultâneas.
+
+SEGURANÇA
+- Somente ADMINISTRADOR pode iniciar, validar ou baixar backups pela API.
+- Esta versão NÃO executa restauração e NÃO altera banco durante a homologação.
+- Segredos DPAPI da máquina antiga são mantidos apenas como referência e ficam explicitamente marcados como não portáveis.
+- A futura restauração deverá gerar credenciais novas e reescrever caminhos absolutos para a nova instalação.
+
+PRÓXIMA ETAPA
+Após validar um backup real criado pela V15.20.21, implementar no novo instalador:
+- Importar backup existente.
+- Validar AF-BACKUP-1 antes de qualquer alteração.
+- Restaurar PostgreSQL em banco novo.
+- Restaurar pasta de dados.
+- Reescrever caminhos documentais/TVI para a nova raiz.
+- Gerar novas credenciais DPAPI.
+- Executar pós-validação e somente então liberar o servidor.
+
+COMPATIBILIDADE
+- Base: V15.20.20.
+- Atualizador, rollback, OCR, comprovantes universais, launcher, licença e governança multiusuário preservados.
