@@ -1,5 +1,5 @@
 AVALIAÇÃO FISCAL — V15.20.20
-STATUS: EM HOMOLOGAÇÃO
+STATUS: ESTÁVEL / FECHADA
 
 OBJETIVO
 Tornar a leitura e validação de comprovantes bancários independente do banco e compatível com comprovantes em PDF textual, PDF escaneado, foto e captura de tela convertida para PDF.
@@ -30,3 +30,17 @@ COMPATIBILIDADE
 - Base: V15.20.19.
 - Banco de dados e documentos existentes preservados.
 - Atualizador, rollback, watchdog, licença e governança multiusuário preservados.
+
+
+FECHAMENTO DA RELEASE
+- Canal: stable.
+- minimum_version: 15.20.19.
+- Pacote: AvaliacaoFiscal_Update_15.20.20.afupd.
+- Pacote SHA-256: 4d26eed22dcd1abc7f1a3d9a082e0d2441a01d001efcfc14b6bab05c1df62164.
+- Pacote tamanho: 2777605 bytes.
+- Launcher SHA-256: 374b423e233a9c8b035d1fb8b871275ecd6c9008799aef4ca779352251be0251.
+- Launcher tamanho: 8985626 bytes.
+- Runtime OCR SHA-256: 5b5861ff73a0e6aecfe4c6b23c68fb7ed4a48ac355e2744856db395c5b2f21b2.
+- Runtime OCR tamanho: 127953583 bytes.
+- Contrato V15.20.20 validado em GitHub Actions.
+- Pacote AF-UPDATE-1 assinado e validado com a chave pública Update V2.
